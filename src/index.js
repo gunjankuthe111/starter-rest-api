@@ -15,7 +15,9 @@ app.use(cors());
 app.use("/signup",signupRoute)
 app.use("/login",loginRoute)
 
-
+app.get("/",(req,res)=>{
+  res.send("vuhdjskandckjskdnashkbj")
+})
 app.listen(PORT, async () => {
   await connect();
   console.log(`Listening to http://localhost:${PORT}`);
