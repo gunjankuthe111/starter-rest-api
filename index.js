@@ -1,10 +1,10 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const connect = require("./config/db");
+const connect = require("./src/config/db");
 
-const signupRoute = require("./user/signup.route");
-const loginRoute = require("./user/login.route");
+const signupRoute = require("./src/user/signup.route");
+const loginRoute = require("./src/user/login.route");
 
 const PORT = process.env.PORT;
 
